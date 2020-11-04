@@ -1,0 +1,213 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, red,rgb(238, 255, 0));
+}
+#logobox{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    float: right;
+}
+#imglogo{
+    height: 100%;
+    border-radius: 50%;
+    
+}
+#h1header{
+    line-height: 100px;
+    float: left;
+    padding: 0 15px;
+}
+header a {
+    color: black;
+
+}
+nav{
+    width: 70%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    
+    text-align: center;
+
+}
+nav a:hover{
+    background-color: blanchedalmond;
+    width:100% ;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(212, 0, 255);
+    border-top: 3px solid white;
+    /* clip-path: polygon(10% 1%, 100% 0%, 90% 100%, 0% 100%); */
+    animation-name: changebackgroung;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    float: left;
+    
+}
+aside img{
+    width: 80%;
+    height: 40%;
+    text-align: center;
+}
+aside iframe{
+    width: 90%;
+    height: 40%;
+}
+#h3aside{   
+    padding: 20px 0;
+    border-bottom: solid red 3px;
+}
+#article{
+    width: 70%;
+    height: 450px ;
+    float: right; 
+    position: relative;
+}
+#divbox{
+    width:400px ;
+    height: 180px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+#divbox h1{
+    border-bottom: crimson solid 3px;
+    padding: 15px 0;
+} 
+#divbox p{
+    padding-top: 10px;
+    font-family: 'Syne Tactile', cursive;
+    text-align: justify;
+}
+#contact-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:15px ;
+    
+    /* Note: when we use display flex we have to use */
+}
+#contact-box img{
+    width: 45px; 
+    padding-bottom: 10px;
+    border-bottom: solid red 2px; 
+}
+#contact-box img:hover{
+    width:55px ;
+    border-bottom: solid rgb(0, 0, 0) 2px;
+}
+
+@keyframes changebackgroung{
+    0%{
+        background-color:white ;
+    }
+    50%{
+        background-color:rgb(184, 44, 44) ;
+    }
+    100%{
+        background-color:  rgb(212, 0, 255) ;
+    }
+
+}
+/* @media all{    "this means codes inside media will be applied for all element"
+    
+}
+@media print{     "this means codes inside media will be applied when printing"
+
+} */
+@media only screen and (min-width:1000px) and (max-width:1070px){
+    #logobox{
+        width: 35%;
+        background-color: crimson;
+    }
+}
+@media only screen and (max-width:999px) {
+    #logobox{
+        width: 40%;
+        
+    }
+}
+@media only screen and (max-width:800px)  {
+    header,main {
+        height: auto; 
+    }
+    #logobox{
+        width: 100%;
+        text-align: center;
+    }
+    #h1header{
+        float: none;
+    }
+    span a {
+        text-decoration: none;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    #article{
+        width: 100%;
+        height: 230px;
+        background-color: darkturquoise;
+    }
+  
+}
+#print{
+    display: none;
+}
+
+@media only screen and (max-width: 502px) {
+    
+    nav li{
+        display: block;
+        width: 100%;     
+    }
+        
+} 
+@media only screen and (orientation:landscape) and (max-width:500px) {
+    #logobox{
+        background-color: blueviolet;
+    }
+}
+@media print {
+    nav{
+        display: none;
+
+    }
+    #print{
+        display: block;
+    }
+}
+
+
